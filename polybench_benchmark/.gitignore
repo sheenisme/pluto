@@ -1,0 +1,17 @@
+*.exe
+*_lnlamp.c
+*_lnlamp.c.no-tile.c
+*.ppcg.c
+*.ppcg.no-tile.c
+avg_*.out
+____tempfile_*.data.polybench
+____tempfile_data*.csv
+____tempfile_time*.txt
+____tempfile_*
+____lnlamp_*
+
+Makefile
+lnlamp_predict_result.png
+lnlamp_temp_result.txt
+lnlamp_internal_usage.py.log
+____tempfile.data.polybench
