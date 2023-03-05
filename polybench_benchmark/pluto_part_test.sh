@@ -19,6 +19,9 @@ do
     cd $benchdir
     echo -e "32\n32\n32\n32" > tile.sizes
     $PLC ${benchname}.c --tile --noprevector -o ${benchname}.pluto.c
+
+    # 返回测试脚本目录
+    cd $workdir
 done
 
 

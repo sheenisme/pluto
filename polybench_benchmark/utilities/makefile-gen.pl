@@ -95,6 +95,8 @@ clean:
 	@ rm -f ____tempfile_time*.txt
 	@ rm -f ____tempfile_*
 	@ rm -f ____lnlamp_*
+	@ rm -f ${kernel}.pluto.c*
+	@ rm -f tile.sizes
 
 EOF
 
