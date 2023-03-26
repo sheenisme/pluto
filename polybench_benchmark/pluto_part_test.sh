@@ -18,7 +18,7 @@ do
     # 进入测试用例的目录进行测试
     cd $benchdir
     # echo -e "32\n32\n32\n32" > tile.sizes
-    $PLC ${benchname}.c --tile --noprevector -o ${benchname}.pluto.c
+    $PLC ${benchname}.c --tile --noprevector --cloogsh --parallel -o ${benchname}.pluto.c
 
     # 返回测试脚本目录
     cd $workdir
@@ -33,6 +33,6 @@ rm -rf build
 rm -rf result-out
 
 
-./taffo_collect-fe-stats.sh pluto.vs.origion_0307
+./taffo_collect-fe-stats.sh pluto.vs.origion_0326
 
 echo "pluto vs origion, over!"

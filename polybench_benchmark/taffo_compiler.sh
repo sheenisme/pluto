@@ -50,6 +50,10 @@ compile_one()
     2> build/${benchname}.log || return $?
 }
 
+
+# 设置openmp
+OMPSET="-fopenmp"
+
 compile_pluto()
 {
   benchpath=$1
@@ -65,6 +69,7 @@ compile_pluto()
     -I"$benchdir" \
     -I./utilities \
     -I./ \
+    $OMPSET \
     $xparams \
     $MIXIMI  \
     -debug-taffo \
