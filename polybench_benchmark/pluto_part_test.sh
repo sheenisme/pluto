@@ -6,7 +6,7 @@ cd $workdir
 
 
 # 配置PLC路径
-PLC=/media/sheen/文件/ubuntu_code_data/pluto/polycc
+PLC=/home/sheen/pluto/polycc
 
 
 all_benchs=$(cat ./utilities/benchmark_list)
@@ -33,6 +33,6 @@ rm -rf build
 rm -rf result-out
 
 
-./taffo_collect-fe-stats.sh pluto.vs.origion_0326
+./taffo_collect-fe-stats.sh pluto_test_result
 
 echo "pluto vs origion, over!"
