@@ -18,7 +18,7 @@ do
     # 进入测试用例的目录进行测试
     cd $benchdir
     # echo -e "32\n32\n32\n32" > tile.sizes
-    $PLC ${benchname}.c --tile --noprevector --cloogsh --parallel -o ${benchname}.pluto.c
+    $PLC ${benchname}.c --tile --noprevector --cloogsh -o ${benchname}.pluto.c
 
     # 返回测试脚本目录
     cd $workdir
